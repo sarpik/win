@@ -6,3 +6,5 @@ some stuff for windows
 
 * `wtd.reg`: windows terminal "open here" -- github.com/microsoft/terminal/issues/1060#issuecomment-611092014
 
+* `autohotkey`: autohotkey. Don't forget to copy the shortcuts of the scripts ya wanna run.
+
