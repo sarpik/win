@@ -1,0 +1,114 @@
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+/**
+ * place this inside
+ * `C:\Users\<user>\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\`
+*/
+
+
+{
+	"$schema": "https://aka.ms/terminal-profiles-schema",
+
+	// "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+	"defaultProfile": "{00000000-0000-0000-ba54-000000000001}",
+
+	"profiles": {
+		"defaults": {
+			// Put settings here that you want to apply to all profiles
+		},
+		"list": [
+			{
+				// Make changes here to the powershell.exe profile
+				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"name": "Windows PowerShell",
+				"commandline": "powershell.exe",
+				"hidden": false
+			},
+			{
+				// Make changes here to the cmd.exe profile
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"name": "cmd",
+				"commandline": "cmd.exe",
+				"hidden": false
+			},
+			{
+				"guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+				"hidden": false,
+				"name": "Ubuntu",
+				"source": "Windows.Terminal.Wsl"
+			},
+			{
+				"guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+				"hidden": false,
+				"name": "kali-linux",
+				"source": "Windows.Terminal.Wsl"
+			},
+			{
+				"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+				"hidden": false,
+				"name": "Azure Cloud Shell",
+				"source": "Windows.Terminal.Azure"
+			},
+			{
+				"guid": "{00000000-0000-0000-ba54-000000000001}",
+				"acrylicOpacity": 0.75,
+				"closeOnExit": "always",
+				"colorScheme": "Campbell",
+				"commandline": "\"%UserProfile%\\scoop\\apps\\git\\current\\usr\\bin\\bash.exe\" -i -l",
+				"cursorColor": "#FFFFFF",
+				"cursorShape": "bar",
+				// "fontFace": "Consolas",
+				// "fontFace": "Fira Code Retina",
+				"fontFace": "Operator Mono",
+				"fontSize": 12,
+				"historySize": 9001,
+				"icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+				"name": "Bash",
+				"padding": "0, 0, 0, 0",
+				"snapOnInput": true,
+				"startingDirectory": "%USERPROFILE%",
+				"useAcrylic": false
+			}
+		]
+	},
+
+	// Add custom color schemes to this array
+	"schemes": [],
+
+	// Add any keybinding overrides to this array.
+	// To unbind a default keybinding, set the command to "unbound"
+	"keybindings": [
+		// { "command": "commandName", "keys": ["modifiers+key"] },
+		// { "command": { "action": "commandName", "argument": "value" }, "keys": ["modifiers+key"] }
+
+		{ "command": "closeWindow", "keys": ["ctrl+q"] },
+		{ "command": "closeWindow", "keys": ["alt+q"] },
+		{ "command": "closeTab", "keys": ["alt+w"] },
+		{ "command": "closeTab", "keys": ["ctrl+w"] },
+		{ "command": "newTab", "keys": ["ctrl+t"] },
+		{ "command": "newTab", "keys": ["alt+t"] },
+		{ "command": { "action": "switchToTab0" }, "keys": ["ctrl+1"] },
+		{ "command": { "action": "switchToTab0" }, "keys": ["alt+1"] },
+		{ "command": { "action": "switchToTab1" }, "keys": ["ctrl+2"] },
+		{ "command": { "action": "switchToTab1" }, "keys": ["alt+2"] },
+		{ "command": { "action": "switchToTab2" }, "keys": ["ctrl+3"] },
+		{ "command": { "action": "switchToTab2" }, "keys": ["alt+3"] },
+		{ "command": { "action": "switchToTab3" }, "keys": ["ctrl+4"] },
+		{ "command": { "action": "switchToTab3" }, "keys": ["alt+4"] },
+		{ "command": { "action": "switchToTab4" }, "keys": ["ctrl+5"] },
+		{ "command": { "action": "switchToTab4" }, "keys": ["alt+5"] },
+		{ "command": { "action": "switchToTab5" }, "keys": ["ctrl+6"] },
+		{ "command": { "action": "switchToTab5" }, "keys": ["alt+6"] },
+		{ "command": { "action": "switchToTab6" }, "keys": ["ctrl+6"] },
+		{ "command": { "action": "switchToTab6" }, "keys": ["alt+6"] },
+		{ "command": { "action": "switchToTab7" }, "keys": ["ctrl+8"] },
+		{ "command": { "action": "switchToTab7" }, "keys": ["alt+8"] },
+		{ "command": { "action": "switchToTab8" }, "keys": ["ctrl+9"] },
+		{ "command": { "action": "switchToTab8" }, "keys": ["alt+9"] },
+		{ "command": { "action": "switchToTab9" }, "keys": ["ctrl+10"] },
+		{ "command": { "action": "switchToTab9" }, "keys": ["alt+10"] }
+	],
+
+	"confirmCloseAllTabs": false
+}
